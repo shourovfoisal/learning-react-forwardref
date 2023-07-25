@@ -5,10 +5,10 @@ type Props = {}
 
 const MyForwardRefParent = (props: Props) => {
 
-    const inputRef: any = React.createRef();
+    const inputRef = React.createRef<HTMLInputElement>();
 
     const handleClick = () => {
-        inputRef.current.focus();
+        inputRef.current?.focus();
     }
 
   return (
